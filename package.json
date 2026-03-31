@@ -17,5 +17,19 @@
     "react-native-responsive-fontsize": "^0.5.1",
     "react-native-web": "^0.21.0"
   },
-  "private": true
+  "private": true,
+  "description": "Aula react native com expo",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciotamega-rgb/introducao-expo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marciotamega-rgb/introducao-expo/issues"
+  },
+  "homepage": "https://github.com/marciotamega-rgb/introducao-expo#readme"
 }

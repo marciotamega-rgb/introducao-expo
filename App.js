@@ -6,11 +6,12 @@ import Exemplo02 from './src/exemplos/ex02';
 
 import Atividade01 from './src/atividades/atv01';
 import Atividade02 from './src/atividades/atv02';
+import Atividade03 from './src/atividades/atv03';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade02 />
+      <Atividade03 />
       <StatusBar style="auto" />
     </View>
   );
