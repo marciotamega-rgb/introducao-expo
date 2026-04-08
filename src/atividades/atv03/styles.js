@@ -6,48 +6,71 @@ const styles = StyleSheet.create({
     container: {
         flex: 1, // container ocupa 100% da tela
         backgroundColor: '#fafafa', // cor do container
-        borderRadius: 10, // borda curvada
+        borderRadius: RFPercentage(2), // borda curvada
         padding: 8, 
-        alignItems: 'center', // alinhamento horizontal - flexDirection collumn
+        alignItems: 'center', // alinhamento horizontal - flexDirection collumn        
     }, 
     titulo: {
+        fontFamily: 'monospace',
         fontSize: RFPercentage(4), // tamanho da fonte
         fontWeight: 'bold', 
-        borderWidth: 3, // expessura da borda
-        marginTop: 20, // margem acima do elemento
-        marginBottom: 20, // margem abaixo do elemento
-        paddingVertical: 10, // espaço interno
+        borderWidth: RFPercentage(0.6), // expessura da borda
+        marginTop: RFPercentage(1), // margem acima do elemento
+        marginBottom: RFPercentage(10), // margem abaixo do elemento
+        // padding: 8, // espaço interno
         width: '100%', // largura do objeto
+        height: 80, // altura do objeto 
         textAlign: 'center', // alinhamento horizontal do texto no container
         textAlignVertical: 'center', // alinhamento vertical do texto no container
         color: 'darkslategrey', // cor do texto 
         borderColor: 'darkslategrey', // cor da borda 
-        borderRadius: 20, // arrendondar borda
+        borderRadius: RFPercentage(2),
     }, 
+    cabelo: {
+        fontSize: RFPercentage(5), 
+        lineHeight: RFPercentage(3.5), 
+        color: 'darkslategrey', 
+    },  
     texto: {
-        fontSize: RFPercentage(2.2),  
+        fontFamily: 'monospace',
+        fontSize: RFPercentage(3),  
+        color: 'darkslategrey', 
+        fontWeight: 'bold',
     }, 
-    botaoAlert: {
-        width: '75%', 
-        margin: RFPercentage(2),         
-    }, 
-    valor: {
-        color: 'darkslategrey',  
-        fontSize: RFPercentage(4),
-    }, 
-    botao: {
+    botao: {        
         backgroundColor: 'darkslategrey', 
-        width: '75%', 
-        borderRadius: RFPercentage(2), 
-        padding: RFPercentage(1), 
-        alignItems: 'center' , 
-        justifyContent: 'center', 
-        margin: RFPercentage(2),
+        // padding: RFPercentage(1), 
+        borderRadius: '50%', 
+        width: RFPercentage(8), 
+        height: RFPercentage(8), 
+        alignItems: 'center', 
+        justifyContent: 'center',
     }, 
     txtBotao: {
-        fontSize: RFPercentage(2), 
+        fontFamily: 'monospace',
+        fontSize: RFPercentage(4), 
         color: '#fafafa',
     }, 
+    botaoZerar: {
+        width: '60%', 
+    }, 
+    containerHorizontal: {
+        flexDirection: 'row', 
+        alignItems: 'center', 
+        justifyContent: 'space-evenly', 
+        // borderWidth: 5, 
+        width: '100%', 
+        // marginVertical: RFPercentage(4), 
+    }, 
+    containerAtividade: {
+        borderWidth: RFPercentage(0.6), 
+        borderColor: 'darkslategrey', 
+        borderRadius: RFPercentage(2), 
+        width: '100%', 
+        height: RFPercentage(30), 
+        alignItems: 'center', 
+        justifyContent: 'space-evenly',
+    },
 });
 
 export default styles;
